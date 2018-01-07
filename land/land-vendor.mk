@@ -120,10 +120,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/land/proprietary/vendor/etc/sound_trigger_mixer_paths_wcd9335.xml:system/vendor/etc/sound_trigger_mixer_paths_wcd9335.xml \
     vendor/xiaomi/land/proprietary/lib/hw/consumerir.default.so:system/lib/hw/consumerir.default.so \
     vendor/xiaomi/land/proprietary/lib/hw/fingerprint.default.so:system/lib/hw/fingerprint.default.so \
-    vendor/xiaomi/land/proprietary/lib/libDiracAPI_SHARED.so:system/lib/libDiracAPI_SHARED.so \
     vendor/xiaomi/land/proprietary/lib/libcom_fingerprints_service.so:system/lib/libcom_fingerprints_service.so \
     vendor/xiaomi/land/proprietary/lib/libmorpho_memory_allocator.so:system/lib/libmorpho_memory_allocator.so \
-    vendor/xiaomi/land/proprietary/lib/soundfx/libdirac.so:system/lib/soundfx/libdirac.so \
     vendor/xiaomi/land/proprietary/lib64/hw/consumerir.default.so:system/lib64/hw/consumerir.default.so \
     vendor/xiaomi/land/proprietary/lib64/hw/fingerprint.default.so:system/lib64/hw/fingerprint.default.so \
     vendor/xiaomi/land/proprietary/lib64/hw/fingerprint.goodix.so:system/lib64/hw/fingerprint.goodix.so \
@@ -135,6 +133,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/land/proprietary/vendor/bin/wcnss_service:system/vendor/bin/wcnss_service \
     vendor/xiaomi/land/proprietary/vendor/etc/diracmobile.config:system/vendor/etc/diracmobile.config \
     vendor/xiaomi/land/proprietary/vendor/lib/libChamomilePA.so:system/vendor/lib/libChamomilePA.so \
+    vendor/xiaomi/land/proprietary/vendor/lib/libDiracAPI_SHARED.so:system/vendor/lib/libDiracAPI_SHARED.so \
     vendor/xiaomi/land/proprietary/vendor/lib/libactuator_ad5816g.so:system/vendor/lib/libactuator_ad5816g.so \
     vendor/xiaomi/land/proprietary/vendor/lib/libactuator_ad5823.so:system/vendor/lib/libactuator_ad5823.so \
     vendor/xiaomi/land/proprietary/vendor/lib/libactuator_bu64244gwz.so:system/vendor/lib/libactuator_bu64244gwz.so \
@@ -970,6 +969,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/land/proprietary/vendor/lib/libtm_interface.so:system/vendor/lib/libtm_interface.so \
     vendor/xiaomi/land/proprietary/vendor/lib/libtrueportrait.so:system/vendor/lib/libtrueportrait.so \
     vendor/xiaomi/land/proprietary/vendor/lib/libubifocus.so:system/vendor/lib/libubifocus.so \
+    vendor/xiaomi/land/proprietary/vendor/lib/soundfx/libdirac.so:system/vendor/lib/soundfx/libdirac.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/libhwdaphal.so:system/vendor/lib64/libhwdaphal.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/libmmsw_detail_enhancement.so:system/vendor/lib64/libmmsw_detail_enhancement.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/libmmsw_math.so:system/vendor/lib64/libmmsw_math.so \
@@ -1484,6 +1484,7 @@ PRODUCT_PACKAGES += \
     ims \
     imssettings \
     CNEService \
+    com.qualcomm.location \
     qcrilmsgtunnel \
     TimeService \
     colorservice \
